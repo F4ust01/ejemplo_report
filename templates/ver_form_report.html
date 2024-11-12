@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#form_{form}").flexform({
+                title: '{title}',
+                fields: [
+                    {fields}
+                ],
+                buttons: [
+                    {name: 'Limpiar', bclass: 'clean', type:"reset", onpress: false},
+                    {separator: true},
+                    {name: 'Ver reporte window Largos', bclass: 'print', url: '{urlWindow}', type:"button", onpress: 'reportWindow'},
+                    {separator: true},
+                    //{name: 'Ver reporte iframe', bclass: 'chartBar', url: '{urlIframe}', type:"button", onpress: 'reportIframe'},            
+                    //{separator: true},
+                    {name: 'Ver reporte div Largos', bclass: 'report', url: '{urlSelf}', type:"button", onpress: 'reportSelf'},
+                    
+                    {separator: true},
+                    {name: 'Ver reporte window Pesos', bclass: 'print', url: '{urlWindowPeso}', type:"button", onpress: 'reportWindow'},
+                    {separator: true},
+                    {name: 'Ver reporte div Pesos', bclass: 'report', url: '{urlSelfPeso}', type:"button", onpress: 'reportSelf'},
+                    
+                    {separator: true},
+                    {name: 'Ver reporte window Extranjeros', bclass: 'print', url: '{urlWindowExtranjero}', type:"button", onpress: 'reportWindow'},
+                    {separator: true},
+                    {name: 'Ver reporte div Extranjeros', bclass: 'report', url: '{urlSelfExtranjero}', type:"button", onpress: 'reportSelf'},
+                 ]
+        });
+    });   
+    </script>	
+    <form id="form_{form}"  name="form_{form}" class="formular" method="post" action=""></form>

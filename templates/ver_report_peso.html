@@ -1,0 +1,57 @@
+<meta http-equiv="Content-Type" content="text/html; charset='iso-8859-1'">
+<link href="../../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../../css/print.css" rel="stylesheet" type="text/css">
+<link href="../../../css/icons.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../../scripts/system/jquery/jquery-1.7.1.min.js"></script>
+<title>REPORTE</title>
+<style type="text/css" media="print"></style>
+<style type="text/css">
+	body{
+		padding: 10px 0 0 10px;
+	}
+	table table {
+		margin: 0;
+	}
+	td{
+		vertical-align:middle;
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#list tr:even").addClass("alt");
+	});
+</script>
+
+<table class="border wlegal" border="0" cellpadding="0" cellspacing="0">
+	<tr align="left" class="alt">
+		<td  colspan= "6" height="10">
+			<table align="center" width="100%" class="noborder" border="0" cellpadding="0" cellspacing="0">
+				<tr height="10" align="center">
+					<td align="center" style=" vertical-align:middle; ">
+						<h2>
+							REPORTE MAYORES PESOS
+						</h2>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="blue">
+		<td align="left" height="5">
+			<h4>Equipos</h4>
+		</td>
+		<td align="left" height="5">
+			<h4>Peso</h4>
+		</td>
+		<td align="left" height="5">
+			<h4>Provincia</h4>
+		</td>
+		<td align="left" height="5">
+			<h4>Nacionalidad</h4>
+		</td>
+	</tr>
+	<tbody id="list">
+		{LISTADO}
+	</tbody>
+</table>
